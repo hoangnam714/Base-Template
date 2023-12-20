@@ -149,6 +149,13 @@ class NetworkManager {
 
 }
 
+//struct Endpoint {
+//    var url: String
+//    var method: HTTPMethod
+//    var parameter: JSON? = nil
+//    var header: HTTPHeaders? = nil
+//}
+
 enum RestApiMethod: String {
     case get = "GET"
     case post = "POST"

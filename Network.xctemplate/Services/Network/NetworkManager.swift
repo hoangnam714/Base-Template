@@ -5,6 +5,13 @@ import OSLog
 
 typealias JSON = [String:Any]
 
+//struct Endpoint {
+//    var url: String
+//    var method: HTTPMethod
+//    var parameter: JSON? = nil
+//    var header: HTTPHeaders? = nil
+//}
+
 class NetworkManager {
     
     private let logger = Logger(subsystem: Bundle.main.bundleIdentifier!, category: "Network")
@@ -146,6 +153,15 @@ class NetworkManager {
 //             }
 //         }
 //     }
+    
+//    private func getEndcoding(_ method: HTTPMethod) -> ParameterEncoding {
+//        switch method {
+//        case .get :
+//            return URLEncoding.default
+//        default :
+//            return JSONEncoding.default
+//        }
+//    }
 
 }
 

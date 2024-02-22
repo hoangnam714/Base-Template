@@ -2,7 +2,7 @@
 
 import Foundation
 
-class ___FILEBASENAMEASIDENTIFIER___Service {
+class ___FILEBASENAMEASIDENTIFIER___ {
     private let networkManager: NetworkManager
     
     init(networkManager: NetworkManager) {

@@ -5,13 +5,6 @@ import OSLog
 
 typealias JSON = [String:Any]
 
-//struct Endpoint {
-//    var url: String
-//    var method: HTTPMethod
-//    var parameter: JSON? = nil
-//    var header: HTTPHeaders? = nil
-//}
-
 class NetworkManager {
     
     private let logger = Logger(subsystem: Bundle.main.bundleIdentifier!, category: "Network")
@@ -79,7 +72,7 @@ class NetworkManager {
 #endif
     }
 
-    ///MARK: - Only work with alamofire
+    //MARK: - Only work with alamofire
 // func requestJSON(_ endpoint: Endpoint ,isLog: Bool = false, _ completion: @escaping (Result<JSON, Error>) -> Void){
 //         if Reachability.isConnectedToNetwork() == false {
 //             completion(.failure(API_ERROR.noInternet))

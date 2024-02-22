@@ -7,10 +7,10 @@ sudo swift install.swift
 ```
  The default path of template in: /Applications/Xcode.app/Contents/Developer/Library/Xcode/Templates/File Templates
  
-`Warning: If you reinstall or update xcode, you need to reinstall the template`
+`Warning: If you reinstall or update Xcode, you need to reinstall the template`
 
 ## Install with manual
- Coppy template file to path: ~/Library/Developer/Xcode/Templates/ 
+ Copy only template ex: Network.xctemplate file to patch: ~/Library/Developer/Xcode/Templates/ 
  
 ## License
 BaseTemplate is released under the MIT license. [See LICENSE](https://github.com/hoangnam714/Base-Template?tab=MIT-1-ov-file) for details.

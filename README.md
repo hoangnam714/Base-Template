@@ -1,4 +1,5 @@
 # Base-Template
+`After creating the template file in the code folder, you should remove the template reference, because Xcode does not support automatic path updates.`
 
 ## Install with terminal
 ```sh

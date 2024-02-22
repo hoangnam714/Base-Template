@@ -173,31 +173,10 @@ enum RestApiMethod: String {
     case patch = "PATCH"
 }
 
-enum API_ERROR: Error {
-    case invalidURL
-    case invailidResponse
-    case invailidData
-    case noInternet
-    case unknown
-    
-    var description: String {
-        get {
-            switch self {
-            case .invalidURL:
-                return "URL invalid"
-            case .invailidResponse:
-                return "Respose invalid"
-            case .invailidData:
-                return "Data response invalid"
-            case .noInternet:
-                return "Unable to connect to the Internet, please check your connection again!"
-            case .unknown:
-                return "Something error"
-            }
-        }
-    }
-}
-
-struct ResponseError {
-    static let invailidJSON = NSError(domain: "", code: 500, userInfo: [ NSLocalizedDescriptionKey: "Invalid response JSON"])
+struct API_ERROR {
+    static let invalidURL = NSError(domain: "", code: 500, userInfo: [ NSLocalizedDescriptionKey: "URL invalid"])
+    static let invailidResponse = NSError(domain: "", code: 500, userInfo: [ NSLocalizedDescriptionKey: "Respose invalid"])
+    static let invailidData = NSError(domain: "", code: 500, userInfo: [ NSLocalizedDescriptionKey: "Data response invalid"])
+    static let noInternet = NSError(domain: "", code: 500, userInfo: [ NSLocalizedDescriptionKey: "Unable to connect to the Internet, please check your connection again!"])
+    static let unknown = NSError(domain: "", code: 500, userInfo: [ NSLocalizedDescriptionKey: "Something error"])
 }

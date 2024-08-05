@@ -1,6 +1,7 @@
 //___FILEHEADER___
 
 import Foundation
+import ObjectMapper
 
 class ___FILEBASENAMEASIDENTIFIER___ {
     private let networkManager: NetworkManager
@@ -9,16 +10,32 @@ class ___FILEBASENAMEASIDENTIFIER___ {
         self.networkManager = networkManager
     }
     
-//    func get_Example(_ success: @escaping (BlogModel) -> Void, failure: @escaping (Error) -> Void) {
+//    func getManga(_ completion: @escaping (Result<MangaModel, Error>) -> Void) {
 //        let endpoint = Endpoint(url: "https://goole.com", method: .get, parameter: [:])
 //        networkManager.requestJSON(endpoint, isLog: true) { (response) in
 //            switch response {
 //            case .success(let json):
-//                guard let artcile = Mapper<Model>().map(JSON: json) else {
-//                    failure(ResponseError.invailidJSON)
+//                guard let manga = Mapper<MangaModel>().map(JSON: json) else {
+//                    completion(.failure(API_ERROR.invailidResponse))
 //                    return
 //                }
-//                success(artcile)
+//                completion(.success(manga))
+//            case .failure(let error):
+//                completion(.failure(error))
+//            }
+//        }
+//    }
+//    
+//    func getManga(_ success: @escaping (MangaModel) -> Void, failure: @escaping (Error) -> Void) {
+//        let endpoint = Endpoint(url: "https://goole.com", method: .get, parameter: [:])
+//        networkManager.requestJSON(endpoint, isLog: true) { (response) in
+//            switch response {
+//            case .success(let json):
+//                guard let manga = Mapper<MangaModel>().map(JSON: json) else {
+//                    failure(API_ERROR.invailidResponse)
+//                    return
+//                }
+//                success(manga)
 //            case .failure(let error):
 //                failure(error)
 //            }
